@@ -2,10 +2,12 @@
 Observer Pattern
 
 Definition:
-    pass
+    Define a one-to-many dependency between objects so that when one object
+    changes state, all its dependents are notified and updated automatically.
 
 Also Known As:
-    pass
+    Dependents
+    Publish-Subscribe (PubSub)
 
 Problem:
     pass
