@@ -75,7 +75,6 @@ class Bicycle(object):
     def perform_shift_down(self):
         self.shifter.shift_down()
 
-
 #
 # Behavior "Interfaces"
 #
