@@ -17,12 +17,15 @@ To run a given pattern, just run it like this:
 
 ```bash
 
+# Be in the repository
+cd design-patterns/
+
 # Run the Observer pattern
 python -m patterns.observer
 
 ```
 
-Be sure to take a look at the [list of patterns][list]
+Be sure to take a look at the [list of patterns][list].
 
 [list]: https://github.com/jdavis/design-patterns#list-of-patterns
 
@@ -47,3 +50,4 @@ List of Patterns
 ----------------
 
 * [Strategy](https://github.com/jdavis/design-patterns/blob/master/patterns/strategy.py)
+* [Observer](https://github.com/jdavis/design-patterns/blob/master/patterns/observer.py)
