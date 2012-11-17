@@ -10,7 +10,9 @@ pattern, but to make it easier to remember.
 Format
 ------
 
-All of the patterns can be found in the *patterns* module.
+All of the patterns can be found in the [patterns][patterns] module.
+
+[patterns]: https://github.com/jdavis/design-patterns/blob/master/patterns/
 
 To learn about a given pattern, just open up the file. Each pattern is self
 contained and contains the following:
