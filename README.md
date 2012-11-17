@@ -14,12 +14,17 @@ To learn about a given pattern, open up the source code. All of the patterns are
 defined in the [patterns][patterns] module.
 
 To run a given pattern, just run it like this:
-'''bash
+
+```bash
 
 # Run the Observer pattern
 python -m patterns.observer
 
-'''
+```
+
+Be sure to take a look at the [list of patterns][list]
+
+[list]: https://github.com/jdavis/design-patterns#list-of-patterns
 
 Format
 ------
