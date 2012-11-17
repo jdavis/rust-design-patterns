@@ -47,6 +47,8 @@ Sources:
 
 """
 
+import sys
+
 
 class Bicycle(object):
     """
@@ -203,3 +205,12 @@ class BradleyWiggins(RideBehavior):
 
         print 'Wow, Bradley Wiggins is a beast!'
         print 'Speed is now', self.speed
+
+
+def main(args):
+    # TODO: Finish main
+    pass
+
+
+if __name__ == '__main__':
+    sys.exit(main(sys.args))
