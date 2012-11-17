@@ -10,9 +10,11 @@ pattern, but to make it easier to remember.
 Format
 ------
 
-All of the patterns can be found in the *patterns* module. To learn about a
-given pattern, just open up the file. Each pattern is self contained and
-contains the following:
+All of the patterns can be found in the *patterns* module.
+
+To learn about a given pattern, just open up the file. Each pattern is self
+contained and contains the following:
+
     1. A definition
     2. List of alternative names
     3. A common problem the pattern solves
