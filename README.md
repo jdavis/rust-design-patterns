@@ -30,7 +30,7 @@ Be sure to take a look at the [list of patterns][list].
 [list]: https://github.com/jdavis/design-patterns#list-of-patterns
 
 Pattern Format
-------
+--------------
 
 All of the patterns can be found in the [patterns][patterns] module.
 
