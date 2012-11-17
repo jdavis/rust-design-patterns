@@ -7,6 +7,20 @@ Python.
 These are supposed to be simple examples to not only illustrate the design
 pattern, but to make it easier to remember.
 
+How to Use
+----------
+
+To learn about a given pattern, open up the source code. All of the patterns are
+defined in the [patterns][patterns] module.
+
+To run a given pattern, just run it like this:
+'''bash
+
+# Run the Observer pattern
+python -m patterns.observer
+
+'''
+
 Format
 ------
 
