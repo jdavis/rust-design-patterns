@@ -69,7 +69,8 @@ class Library(object):
         It is a strange library in a way. Rather than hold the book for the
         first person on the waitlist, it just broadcasts a message to everyone
         on the waitlist and the first person to check it out gets the book.
-        """
+
+    """
 
     def __init__(self):
         pass
