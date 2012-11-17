@@ -21,3 +21,8 @@ contained and contains the following:
 4. A wrong solution
 5. The correct solution using the pattern
 6. Sources used for the pattern for continued reading
+
+List of Patterns
+----------------
+
+* [Strategy](https://github.com/jdavis/design-patterns/blob/master/patterns/strategy.py)
