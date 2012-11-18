@@ -45,6 +45,29 @@ Sources:
     Author(s): Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
     Pages: 315-323
 
+Example Info:
+    This examle uses my favorite activity/sport to illustrate the Strategy
+    pattern. It uses Bicycles as its example classes.
+
+    A Bicycle is an object that consists of two algorithms that have been
+    encapsulated: ShiftBehavior and RideBehavior. Essentially, the idea is that
+    a Bicycle has the same universal parts across all instances. Road bikes,
+    mountain bikes fixies, and all others have two wheels, a saddle, a frame,
+    chain, pedals, and so on. The main difference is how it performs shifting.
+    So the idea of this example abstracts that out to another class.
+
+    The second thing that it abstracts out is the riders. Bikes can be ridden
+    by many people so after a Bicycle is created, the method `set_rider` will
+    allow you to change who is on it.
+
+    This example may seem strange for a few reasons. It is using some
+    psuedo-interfaces, since Python doesn't have support for real interfaces.
+    Instead, a base class is created that just raises an exception if that
+    class were to be instantiated and a method performed on it. This is strange
+    in that interfaces might seem slightly un-pythonic in some eyes.
+
+    Despite this, the example should (hopefully) make sense. Enjoy!
+
 """
 
 import sys

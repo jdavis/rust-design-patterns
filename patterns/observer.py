@@ -27,6 +27,9 @@ Sources:
     Author(s): Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
     Pages: 293-299
 
+Example Info:
+    pass
+
 """
 
 import sys

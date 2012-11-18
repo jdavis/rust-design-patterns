@@ -25,4 +25,7 @@ Sources:
     Author(s): Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
     Pages: 175-184
 
+Example Info:
+    pass
+
 """
