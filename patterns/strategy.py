@@ -84,20 +84,33 @@ class Bicycle(object):
 
     """
 
-    def __init__(self, shifter, rider):
+    def __init__(self, shifter):
         self.shifter = shifter
-        self.rider = rider
+        self.rider = None
 
-    def set_ride_behavior(self, behavior):
+    def set_rider(self, behavior):
         self.rider = behavior
+        behavior.speed = 0
 
     def perform_pedal(self):
+        if self.rider is None:
+            print 'No one is on the bike! Call set_rider first.'
+            return
+
         self.rider.pedal()
 
     def perform_shift_up(self):
+        if self.rider is None:
+            print 'No one is on the bike! Call set_rider first.'
+            return
+
         self.shifter.shift_up()
 
     def perform_shift_down(self):
+        if self.rider is None:
+            print 'No one is on the bike! Call set_rider first.'
+            return
+
         self.shifter.shift_down()
 
 #
@@ -171,7 +184,7 @@ class RoadBikeShifter(ShiftBehavior):
         print 'Shifted down to:', self.current_gear
 
 
-class SingleSpeed(ShiftBehavior):
+class SingleSpeedShifter(ShiftBehavior):
     """
     Inherit our base ShiftBehavior and implement some basic single speed bike
     mechanics.
@@ -179,7 +192,7 @@ class SingleSpeed(ShiftBehavior):
     """
 
     def __init__(self):
-        super(SingleSpeed, self).__init__()
+        super(SingleSpeedShifter, self).__init__()
         self.gears = 1
 
     def shift_up(self):
@@ -231,8 +244,38 @@ class BradleyWiggins(RideBehavior):
 
 
 def main(args):
-    # TODO: Finish main
-    pass
+    # Create our RideBehaviors
+    geezer = OldGeezer()
+    wiggo = BradleyWiggins()
+
+    # Create the ShiftBehaviors
+    single_speed_shifter = SingleSpeedShifter()
+    road_bike_shifter = RoadBikeShifter()
+
+    # Create our bikes with the shifting
+    road_bike = Bicycle(road_bike_shifter)
+    single_speed = Bicycle(single_speed_shifter)
+
+    # Mount our bikes
+    road_bike.set_rider(wiggo)
+    single_speed.set_rider(geezer)
+
+    # Test out our shifting
+    print '\nTesting out road bike with Wiggo...'
+    road_bike.perform_shift_up()
+    road_bike.perform_pedal()
+
+    print '\nTesting out single speed bike with geezer...'
+    single_speed.perform_shift_up()
+    single_speed.perform_pedal()
+
+    print '\nSwapping riders...'
+    single_speed.set_rider(wiggo)
+    road_bike.set_rider(geezer)
+
+    print '\nTesting road bike with geezer...'
+    road_bike.perform_shift_up()
+    road_bike.perform_pedal()
 
 
 if __name__ == '__main__':
