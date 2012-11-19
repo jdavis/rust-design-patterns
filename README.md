@@ -57,13 +57,18 @@ List of Patterns
 
 Sources
 -------
-Title: Head First Design Patterns
-Author(s): Eric Freeman & Elisabeth Freeman
-Link(s): [Site][hfdp], [Amazon][hfdpa]
+ 1. Title: Head First Design Patterns
+ 
+    Author(s): Eric Freeman & Elisabeth Freeman
+    
+    Link(s): [Site][hfdp], [Amazon][hfdpa]  
+  
 
-Title: Design Patterns
-Author(s): Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
-Link(s): [Amazon][GoFA], [Wikipedia][GoFW]
+ 2. Title: Design Patterns
+ 
+    Author(s): Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+    
+    Link(s): [Amazon][GoFA], [Wikipedia][GoFW]
 
 
 [GoFA]: http://amzn.com/0201633612
