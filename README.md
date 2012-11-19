@@ -64,7 +64,7 @@ Sources
     **Link(s)**: [Site][hfdp], [Amazon][hfdpa]  
   
 
- 2. **Title**: Design Patterns
+ 2. **Title**: Design Patterns: Elements of Reusable Object-Oriented Software
  
     **Author(s)**: Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
     
