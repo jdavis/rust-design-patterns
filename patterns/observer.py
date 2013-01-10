@@ -10,13 +10,30 @@ Also Known As:
     Publish-Subscribe (PubSub)
 
 Problem:
-    pass
+    An often encountered problem in programming is when a value in a class,
+    Class A, must be updated. This is usually easy but what would happen if
+    there are multiple classes that must be told about this value change?
 
 Wrong Solution:
-    pass
+    There are a few wrong ways to solve this problem. One solution (more common
+    in threaded applications, such as GUI applications) is to just poll the
+    given value every x seconds. This is bad because it adds unneeded CPU usage.
+
+    Another solution is to create some sort of update method on Class A as well
+    as a method on any of the other classes that rely on the value. This update
+    method would be called whenever the value changes. Once it is called it
+    would would then call each method on the dependent class to let it know
+    that the value changed. While this is closer to the solution, it would
+    require modifying the update method of Class A everytime a new class relies
+    on another class.
 
 Correct Solution:
-    pass
+    The correct solution is to instead register each dependent class with Class
+    A upon creation. Class A would then keep track of all the classes that are
+    now 'registered' with it. Then once a value changes, it would then notify
+    each class that has been registered. This allows an arbitrary number of
+    classes to 'observe' a value and moves the registration act outside of the
+    Class A.
 
 Sources:
     Title: Head First Design Patterns
@@ -28,7 +45,14 @@ Sources:
     Pages: 293-299
 
 Example Info:
-    pass
+    The example showing the Observer pattern uses a system familiar to all, a
+    library. When a book is checked out, the library then creates a wait list.
+    Anyone that would like to checkout the book is added to the list. Then once
+    the book changes status, all* of the patrons on the list are notified.
+
+    *This is slightly different than normal libraries. This list isn't FIFO
+    like most libraries. This example was modified for pedagogical purposes;
+    simpler is easier to understand.
 
 """
 
