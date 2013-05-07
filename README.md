@@ -51,9 +51,10 @@ contained and contains the following:
 List of Patterns
 ----------------
 
-* [Decorator](https://github.com/jdavis/design-patterns/blob/master/patterns/decorator.py)
-* [Observer](https://github.com/jdavis/design-patterns/blob/master/patterns/observer.py)
-* [Strategy](https://github.com/jdavis/design-patterns/blob/master/patterns/strategy.py)
+* [Adapter](patterns/adapter.py)
+* [Decorator](patterns/decorator.py)
+* [Observer](patterns/observer.py)
+* [Strategy](patterns/strategy.py)
 
 Sources
 -------
