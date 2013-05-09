@@ -34,13 +34,13 @@ Example Info:
 
 
 class RocketShip(object):
-    def turnOn(self):
+    def turn_on(self):
         raise NotImplementedError()
 
-    def turnOff(self):
+    def turn_off(self):
         raise NotImplementedError()
 
-    def blastOff(self):
+    def blast_off(self):
         raise NotImplementedError()
 
     def fly(self):
@@ -48,13 +48,13 @@ class RocketShip(object):
 
 
 class NASAShip(RocketShip):
-    def turnOn(self):
+    def turn_on(self):
         print('NASAShip turning on')
 
-    def turnOff(self):
+    def turn_off(self):
         print('NASAShip turning off')
 
-    def blastOff(self):
+    def blast_off(self):
         print('NASAShip blasting off')
 
     def fly(self):
@@ -82,14 +82,14 @@ class SpaceXAdapter(RocketShip):
     def __init__(self):
         self.ship = SpaceXShip()
 
-    def turnOn(self):
+    def turn_on(self):
         self.ship.on()
         self.ship.ignition()
 
-    def turnOff(self):
+    def turn_off(self):
         self.ship.off()
 
-    def blastOff(self):
+    def blast_off(self):
         self.ship.launch()
 
     def fly(self):
