@@ -1,3 +1,5 @@
+# In the process of being converted from Python to Rust
+
 Design Patterns in Python
 =========================
 
