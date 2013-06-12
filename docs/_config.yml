@@ -1,0 +1,18 @@
+safe: true
+pygments: true
+permalink: /:title
+markdown: rdiscount
+
+title: Josh Davis
+name: Josh Davis's Personal Site
+description: Personal web page for Josh L. Davis
+url: http://joshldavis.com
+feed: /atom.xml
+
+author: Josh Davis
+contact: hello@joshldavis.com
+
+css:
+    - /css/base.css
+    - /lib/font-awesome/css/font-awesome.min.css
+    - http://fonts.googleapis.com/css?family=Droid+Sans
