@@ -55,7 +55,7 @@ Each design pattern will have:
 List of Patterns
 ----------------
 
-* [Adapter](patterns/adapter.rs)
+* [Adapter](http://joshldavis.com/design-patterns/adapter/)
 
 Sources
 -------
