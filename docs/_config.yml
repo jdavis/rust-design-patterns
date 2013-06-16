@@ -1,8 +1,7 @@
-safe: false
+safe: true
 pygments: true
 permalink: /:title
 markdown: rdiscount
-plugins: _plugins/
 
 title: Josh Davis
 name: Josh Davis's Personal Site
