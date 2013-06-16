@@ -3,8 +3,8 @@
 Design Patterns in Rust
 =========================
 
-Implementation of various design patterns in a new and the new and exciting
-language called [Rust][rust].
+Implementation of various design patterns in a new and exciting language called
+[Rust][rust].
 
 These are supposed to be simple examples to not only illustrate the design
 pattern, but to make it easier to remember.
