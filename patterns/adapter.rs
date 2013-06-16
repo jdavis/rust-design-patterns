@@ -51,8 +51,14 @@ trait SpaceXShip {
     fn fly(&self);
 }
 
+/*
+ * Basic struct for a SpaceX Dragon rocket ship
+ */
 struct SpaceXDragon;
 
+/*
+ * Implement the SpaceX trait to add functionality to the Space X Dragon
+ */
 impl SpaceXShip for SpaceXDragon {
     fn ignition(&self) {
         println("Turning Dragon's ignition.")
@@ -75,10 +81,21 @@ impl SpaceXShip for SpaceXDragon {
     }
 }
 
+/*
+ * Uh oh, the new SpaceXDragon doesn't implement the RocketShip interface. We
+ * need to create an adapter that does.
+ */
+
+/*
+ * Adapter to adapt anything that implements SpaceXShip to the RocketShip trait
+ */
 struct SpaceXAdapter {
     ship: SpaceXDragon
 }
 
+/*
+ * SpaceX Adapter that adds RocketShip traits to any SpaceXShip
+ */
 impl RocketShip for SpaceXAdapter {
     fn turn_on(&self) {
         self.ship.ignition();
@@ -98,6 +115,9 @@ impl RocketShip for SpaceXAdapter {
     }
 }
 
+/*
+ * Basic function to pilot ships that implement the RocketShip trait
+ */
 fn pilot<S: RocketShip>(ship: &S) {
     ship.turn_on();
     ship.blast_off();
@@ -107,16 +127,17 @@ fn pilot<S: RocketShip>(ship: &S) {
 }
 
 fn main() {
+    // Create a new NASAShip
     let saturn5 = NASAShip;
 
     // Let's fly our NASAShip
     println("Piloting the Saturn 5.");
     pilot(&saturn5);
 
+    // Create a Dragon
     let dragon = SpaceXDragon;
 
     // Uh oh, our pilot function doesn't recognize this ship...
-    // println("Piloting the Dragon.");
     // pilot(&dragon); <-- Gives a compile time error.
 
     // Let's Adapt our SpaceXDragon ship
