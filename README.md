@@ -46,10 +46,10 @@ design patterns.
 Each design pattern will have:
 
 1. A definition
-2. List of alternative names
+2. List of alternative names (if the pattern has any)
 3. A common problem the pattern solves
 4. A wrong solution
-5. The correct solution using the pattern
+5. A correct solution using the pattern
 6. Sources used for the pattern for continued reading
 
 List of Patterns
