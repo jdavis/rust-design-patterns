@@ -55,7 +55,7 @@ Each design pattern will have:
 List of Patterns
 ----------------
 
-* [Adapter](http://joshldavis.com/design-patterns/adapter/)
+* [Adapter](http://joshldavis.com/rust-design-patterns/adapter/)
 
 Sources
 -------
@@ -73,10 +73,10 @@ Sources
     **Link(s)**: [Wikipedia][GoFW], [Amazon][GoFA]
 
 [rust]: http://www.rust-lang.org/
-[documentation]: http://joshldavis.com/design-patterns/
+[documentation]: http://joshldavis.com/rust-design-patterns/
 [GoFA]: http://amzn.com/0201633612
 [GoFW]: http://en.wikipedia.org/wiki/Design_Patterns
-[list]: https://github.com/jdavis/design-patterns#list-of-patterns
+[list]: #list-of-patterns
 [hfdp]: http://www.headfirstlabs.com/books/hfdp/
 [hfdpa]: http://amzn.com/0596007124
 [patterns]: patterns/

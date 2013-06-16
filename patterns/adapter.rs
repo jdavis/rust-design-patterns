@@ -1,6 +1,6 @@
 /*
  * Adapter Design Pattern
- * http://joshldavis.com/design-patterns/adapter/
+ * http://joshldavis.com/rust-design-patterns/adapter/
  */
 
 /*
