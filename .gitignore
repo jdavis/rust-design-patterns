@@ -1,4 +1,5 @@
 a.out
+*~
 *.sw[po]
 *.py[co]
 _site/
