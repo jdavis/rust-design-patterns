@@ -20,10 +20,10 @@ To run a given pattern, just run it like this:
 ```bash
 
 # Be in the repository
-cd design-patterns/
+$ cd design-patterns/
 
 # Run the Adapter pattern
-rust run patterns/adapter.rs
+$ rust run patterns/adapter.rs
 
 ```
 
