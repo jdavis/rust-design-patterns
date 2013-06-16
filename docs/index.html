@@ -4,4 +4,28 @@ layout: default
 title: Home
 ---
 
-{{ site.posts.first.content }}
+<div class="content">
+    <h1>Design Patterns</h1>
+
+    <p>There are many types of design patterns. They are cool.</p>
+
+    <h2>Classes of Design Patterns</h2>
+
+    <p>Three classes.</p>
+
+    <h3>Creational</h3>
+{% for post in site.categories.creational %}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
+
+    <h3>Structural</h3>
+{% for post in site.categories.structural %}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
+
+    <h3>Behavioral</h3>
+{% for post in site.categories.behavioral %}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
+
+</div>
