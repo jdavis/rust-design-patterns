@@ -6,7 +6,7 @@ markdown: rdiscount
 title: Josh Davis
 name: Josh Davis's Personal Site
 description: Personal web page for Josh L. Davis
-url: http://joshldavis.com
+url: http://joshldavis.com/rust-design-patterns
 feed: /atom.xml
 
 author: Josh Davis
