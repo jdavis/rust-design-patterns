@@ -6,17 +6,17 @@
         <meta name="description" content="{{ site.description }}" />
         <meta name="author" content="Josh Davis" />
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-        <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}{{ site.feed }}">
+        <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.base }}{{ site.feed }}">
     {% for css in site.css %}
-        <link href="{{ css }}" rel="stylesheet" type="text/css">
+        <link href="{{ site.base }}{{ css }}" rel="stylesheet" type="text/css">
     {% endfor %}
     {% if page.id == 'home' %}
         {% for css in site.posts.first.css %}
-        <link href="{{ css }}" rel="stylesheet" type="text/css">
+        <link href="{{ site.base }}{{ css }}" rel="stylesheet" type="text/css">
         {% endfor %}
     {% else %}
         {% for css in page.css %}
-        <link href="{{ css }}" rel="stylesheet" type="text/css">
+        <link href="{{ site.base }}{{ css }}" rel="stylesheet" type="text/css">
         {% endfor %}
     {% endif %}
     </head>
@@ -24,39 +24,38 @@
 	<body>
         <div class="container">
             <div class="side">
-                <div class="me">
-                    <img src="/img/rocket.png" class="rocket" alt="My cat, Rocket"/>
-                    <img src="/img/me.png" class="josh" alt="Josh Davis"/>
-                </div>
-
-                <h2>Josh Davis</h2>
-
-                <p>
-                    I'm a Computer Science major that is interning at <a href="http://amazon.com">Amazon</a> in Seattle.
-                </p>
-                <p>
-                    I like to learn, pet kittens, and wear fluffy socks.
-                </p>
-                <p>
-                    I never save anything for the swim back.
-                </p>
-
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/posts/">Posts</a></li>
-                    <li><a href="/learning/">Learning</a></li>
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="/about/#contact">Contact</a></li>
-                    <li><a href="{{ site.feed }}">RSS <i class="icon-rss"></i></a></li>
+                    <li><a href="/"><i class="icon-double-angle-left"></i> Return
+                to joshldavis.com</a></li>
                 </ul>
 
-                <p class="profiles">
-                    <a title="Josh Davis on GitHub" href="https://github.com/jdavis"><i class="icon-github-sign"></i></a>
-                    <a title="Josh Davis on Twitter" href="https://twitter.com/HopefulJosh"><i class="icon-twitter-sign"></i></a>
-                    <a title="Josh Davis on Facebook" href="https://facebook.com/joshd"><i class="icon-facebook-sign"></i></a>
-                    <a title="Josh Davis on Google+" href="https://plus.google.com/118212955073202247374/about"><i class="icon-google-plus-sign"></i></a>
-                    <a title="Josh Davis on LinkedIn" href="https://linkedin.com/in/joshualeedavis"><i class="icon-linkedin-sign"></i></a>
-                </p>
+                <div class="me">
+                    <img src="{{ site.base }}img/rust-logo.png" alt="Rust Lang
+                    logo"/>
+                </div>
+
+                <h2>Rust Design Patterns</h2>
+
+                <h3>Creational</h3>
+                <ul>
+                {% for post in site.categories.creational %}
+                    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+                </ul>
+
+                <h3>Structural</h3>
+                <ul>
+                {% for post in site.categories.structural %}
+                    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+                </ul>
+
+                <h3>Behavioral</h3>
+                <ul>
+                {% for post in site.categories.behavioral %}
+                    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+                </ul>
             </div>
 
             <div class="wrap">
