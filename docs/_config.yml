@@ -3,9 +3,10 @@ pygments: true
 permalink: /:title
 markdown: rdiscount
 
-title: Josh Davis
-name: Josh Davis's Personal Site
-description: Personal web page for Josh L. Davis
+title: Rust Design Patterns - Josh Davis
+name: Rust Design Patterns
+description: Design Patterns in Rust Language
+base: http://joshldavis.com/
 url: http://joshldavis.com/rust-design-patterns
 feed: /atom.xml
 
