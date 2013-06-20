@@ -49,19 +49,29 @@ title: Home
 
 <h4>Creational</h4>
 
+<ul class="pretty">
+    <li>Coming soon..</li>
 {% for post in site.categories.creational %}
-    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
+</ul>
 
 <h4>Structural</h4>
+
+<ul class="pretty">
 {% for post in site.categories.structural %}
-    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
+</ul>
 
 <h4>Behavioral</h4>
+
+<ul class="pretty">
+    <li>Coming soon..</li>
 {% for post in site.categories.behavioral %}
-    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
+</ul>
 
 <h2>Sources</h2>
 
