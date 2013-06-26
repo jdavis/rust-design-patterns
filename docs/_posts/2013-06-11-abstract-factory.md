@@ -64,7 +64,13 @@ factory works the same way. In programmer terminology, each factory has the same
 *interface*.
 
 ### Example Diagram
-TODO
+
+<div class="gallery medium">
+    <a href="{{ site.url }}/img/abstract-factory-example.png" rel="lightbox" title="Example of the Abstract Factory Design Pattern.">
+        <img src="{{ site.url }}/img/abstract-factory-example.png" width="620">
+        <span>Example of the Abstract Factory Design Pattern.</span>
+    </a>
+</div>
 
 ### Example Code
 
