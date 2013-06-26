@@ -20,9 +20,9 @@ trait Tablet {
 /*
  * Core Trait that defines a Factory
  */
-trait Factory {
-    fn new_phone<T: Phone>(&self) -> T;
-    fn new_tablet<T: Tablet>(&self) -> T;
+trait Factory<P: Phone, T: Tablet> {
+    fn new_phone(&self) -> P;
+    fn new_tablet(&self) -> T;
 }
 
 
@@ -51,12 +51,12 @@ impl Tablet for iPad {
  */
 struct AppleFactory;
 
-impl Factory for AppleFactory {
-    fn new_phone<T: Phone>(&self) -> T {
+impl Factory<iPhone, iPad> for AppleFactory {
+    fn new_phone(&self) -> iPhone {
         return iPhone;
     }
 
-    fn new_tablet<T: Tablet>(&self) -> T {
+    fn new_tablet(&self) -> iPad {
         return iPad;
     }
 }
@@ -87,16 +87,30 @@ impl Tablet for Nexus10 {
  */
 struct GoogleFactory;
 
-impl Factory for GoogleFactory {
-    fn new_phone<T: Phone>(&self) -> T {
+impl Factory<Nexus4, Nexus10> for GoogleFactory {
+    fn new_phone(&self) -> Nexus4 {
         return Nexus4;
     }
 
-    fn new_tablet<T: Tablet>(&self) -> T {
+    fn new_tablet(&self) -> Nexus10 {
         return Nexus10;
     }
 }
 
-fn main() {
 
+fn main() {
+    let google = AppleFactory;
+    let apple = GoogleFactory;
+
+    let phone = apple.new_phone();
+    phone.call();
+
+    let phone = google.new_phone();
+    phone.call();
+
+    let tablet = apple.new_tablet();
+    tablet.play_games();
+
+    let tablet = google.new_tablet();
+    tablet.play_games();
 }
