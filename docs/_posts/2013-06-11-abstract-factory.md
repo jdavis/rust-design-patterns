@@ -174,8 +174,8 @@ impl Factory<Nexus4, Nexus10> for GoogleFactory {
 
 fn main() {
     // Create our two different factories
-    let google = AppleFactory;
-    let apple = GoogleFactory;
+    let apple = AppleFactory;
+    let google = GoogleFactory;
 
     // Both factories use the same interface, so let's just use them
 
