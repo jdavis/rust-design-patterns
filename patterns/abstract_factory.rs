@@ -47,7 +47,7 @@ impl Tablet for iPad {
 }
 
 /*
- * This would contain all stuff required to make Apple devices.
+ * Create AppleFactory and implement it for our Apple devices
  */
 struct AppleFactory;
 
@@ -83,7 +83,7 @@ impl Tablet for Nexus10 {
 }
 
 /*
- * This would contain all stuff required to make Google devices.
+ * Create GoogleFactory and implement it for our Google devices
  */
 struct GoogleFactory;
 
@@ -99,15 +99,20 @@ impl Factory<Nexus4, Nexus10> for GoogleFactory {
 
 
 fn main() {
+    // Create our two different factories
     let google = AppleFactory;
     let apple = GoogleFactory;
 
+    // Both factories use the same interface, so let's just use them
+
+    // Test out creating phones
     let phone = apple.new_phone();
     phone.call();
 
     let phone = google.new_phone();
     phone.call();
 
+    // Test out creating tablets
     let tablet = apple.new_tablet();
     tablet.play_games();
 
