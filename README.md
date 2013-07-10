@@ -56,6 +56,7 @@ List of Patterns
 ----------------
 
 * [Adapter](http://joshldavis.com/rust-design-patterns/adapter/)
+* [Abstract Factory](http://joshldavis.com/rust-design-patterns/abstract-factory/)
 
 Sources
 -------
