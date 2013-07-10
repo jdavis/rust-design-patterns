@@ -2,6 +2,7 @@
 layout: default
 title: Abstract Factory
 category: creational
+description: Abstract factory design pattern in the Rust programming language with example.
 css:
     - /css/code.css
     - /lib/lightbox/css/lightbox.css

@@ -2,6 +2,7 @@
 layout: default
 title: Chain of Responsibility
 category: behavioral
+category: The Chain of Responsibility design pattern in the Rust programming language with an example.
 css:
     - /css/code.css
     - /lib/lightbox/css/lightbox.css
