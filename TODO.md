@@ -1,6 +1,6 @@
 TODO
 ====
 
-- Add Rust examples
-- Create amazing documentation
-- Publish into gh-pages
+- [ ] Fix up adapter.rs pattern
+- [ ] Create script that autogenerates documentation from code
+- [ ] Add basic Design Pattern info
