@@ -69,7 +69,7 @@ impl SpaceXShip for SpaceXDragon {
     }
 
     fn off(&self) {
-        println("Turing off the Dragon.")
+        println("Turning off the Dragon.")
     }
 
     fn launch(&self) {
