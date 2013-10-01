@@ -5,8 +5,6 @@ MAIN_BRANCH="master"
 DOC_BRANCH="gh-pages"
 DOCS_DIR="docs"
 SITE_DIR="_site"
-PLUGINS_DIR="$DOCS_DIR/_plugins/"
-LAYOUTS_DIR="$DOCS_DIR/_layouts/"
 
 #
 # Documentation functions
@@ -61,7 +59,7 @@ function build() {
     echo
 
     # Build documentation
-    jekyll build --source $DOCS_DIR --destination $SITE_DIR --plugins $PLUGINS_DIR --layouts $LAYOUTS_DIR
+    jekyll build --source $DOCS_DIR --destination $SITE_DIR
 }
 
 # Do a few sanity checks...
