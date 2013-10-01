@@ -8,7 +8,9 @@ description: Explanation of how to appropriately apply a Design Pattern.
 {{ page.title }}
 ================
 
-```python
+{% highlight python %}
+
 # Apply it, yo!
 design_pattern.apply()
-```
+
+{% endhighlight %}
