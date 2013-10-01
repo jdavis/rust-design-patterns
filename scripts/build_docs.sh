@@ -61,7 +61,7 @@ function build() {
     echo
 
     # Build documentation
-    echo jekyll build --source $DOCS_DIR --destination $SITE_DIR --plugins $PLUGINS_DIR --layouts $LAYOUTS_DIR
+    jekyll build --source $DOCS_DIR --destination $SITE_DIR --plugins $PLUGINS_DIR --layouts $LAYOUTS_DIR
 }
 
 # Do a few sanity checks...
