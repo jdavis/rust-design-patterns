@@ -3,8 +3,8 @@
 # Set our variables
 MAIN_BRANCH="master"
 DOC_BRANCH="gh-pages"
-DOCS_DIR="docs/"
-SITE_DIR="_site/"
+DOCS_DIR="docs"
+SITE_DIR="_site"
 PLUGINS_DIR="$DOCS_DIR/_plugins/"
 LAYOUTS_DIR="$DOCS_DIR/_layouts/"
 
