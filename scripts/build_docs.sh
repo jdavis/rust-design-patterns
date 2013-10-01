@@ -13,7 +13,14 @@ LAYOUTS_DIR="$DOCS_DIR/_layouts/"
 
 # Prints the basic usage of build_docs.sh.
 function usage() {
-    echo Usage: build_docs.sh [serve]
+    echo usage: build_docs.sh [commands...]
+    echo
+    echo default command: build
+    echo
+    echo Commands:
+    echo "\tbuild\t\tBuilds Jekyll documentation"
+    echo "\tdeploy\t\tCommits and pushes changes"
+    echo "\tserve\t\tUses Jekyll's built-in server"
 }
 
 # Uses Jekyll to serve up the documentation.
