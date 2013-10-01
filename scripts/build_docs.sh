@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Set our variables
+MAIN_BRANCH="master"
 DOC_BRANCH="gh-pages"
 DOCS_DIR="docs/"
 SITE_DIR="_site/"
@@ -47,6 +48,8 @@ function deploy() {
     git add .
     git commit -m "AUTO: Update generated documentation"
     git push origin $DOC_BRANCH
+
+    git checkout $MAIN_BRANCH
 
     echo
     echo Deploy finished.
