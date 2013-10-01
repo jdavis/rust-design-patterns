@@ -28,7 +28,7 @@ function serve() {
     echo Serving up documentation...
     echo
 
-    jekyll serve --source $DOCS_DIR --destination $SITE_DIR
+    jekyll serve --watch --source $DOCS_DIR --destination $SITE_DIR
 }
 
 # Checkouts the gh-pages branch, commits the generated documentation and then
