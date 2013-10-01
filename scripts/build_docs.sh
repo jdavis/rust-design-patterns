@@ -43,7 +43,7 @@ function deploy() {
         exit 1
     }
 
-    mv $SITE_DIR/* ./
+    cp -a $SITE_DIR/* ./
 
     git add .
     git commit -m "AUTO: Update generated documentation"
