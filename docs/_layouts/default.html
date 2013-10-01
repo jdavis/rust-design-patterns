@@ -40,7 +40,9 @@
                     <li><a href="{{ site.url }}">Home</a></li>
                     <li><a href="https://github.com/jdavis/rust-design-patterns">Source Code</a></li>
                     <li><a href="https://github.com/jdavis/rust-design-patterns/issues">Issues</a></li>
-                    <li><a href="{{ site.url }}/what/">What is a Design Pattern?</a></li>
+                {% for post in site.categories.info %}
+                    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
                 </ul>
 
                 <h3>Creational</h3>
