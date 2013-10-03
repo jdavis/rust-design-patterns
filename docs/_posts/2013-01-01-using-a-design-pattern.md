@@ -30,15 +30,16 @@ The way to remedy this is to think about how you want to do something before you
 actually do it. By doing this, you can look at the trade-offs and shortcomings
 whenever you make a decision about the structure of your code.
 
-A few examples of the problems that arise when not thoroughly thinking through a
-design are below:
+A few examples of the things developers do when they come across a problem and
+don't design a solution for it:
 
 1. I need code to do X. I'll add it to this object. Oh, this code also needs to
    be in this object? I'll just copy and paste it.
 2. I need to reuse code across different objects. I'll just make a dummy object
    that only contains that method.
 
-By designing instead of coding blindly, the following problems might arise:
+By designing instead of coding blindly, the following problems might arise
+in comparison:
 
 1. If I were to use inheritance here to solve X problem, what side effects would
    it have when this code needs to be extended for Y?
