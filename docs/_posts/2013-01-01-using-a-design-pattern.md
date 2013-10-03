@@ -73,5 +73,25 @@ The example will provide a self contained use case of the pattern in action.
 
 ## Implement the Pattern
 
+The implementation of a design pattern will vary greatly depending on the
+language, package layout, and other factors of the software environment.
+
+However, the core idea does not change. An example of this would be implementing
+the [Observer pattern][observer] in Rust as compared to Java.
+
+In Java, you could use polymorphism or an interface when creating your observer
+pattern.
+
+In Rust, this changes a bit. Rust doesn't have inheritance or polymorphism. It
+does have traits which is very similar to an interface. A Rust programmer
+wouldn't be able to use polymorphism in this case.
+
+## Final Thoughts
+
+By using a design pattern, the quality of your code and software can be greatly
+increased. It's important to realize the benefit that they can provide and what
+problems they may solve.
+
 [what]: /rust-design-patterns/what/
+[observer]: /rust-design-patterns/observer/
 [uml]: http://en.wikipedia.org/wiki/Unified_Modeling_Language
