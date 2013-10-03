@@ -7,6 +7,7 @@ TODO
 - [x] Create script that autogenerates documentation from code
 - [ ] Add code automatically when building (no duplication)
 - [ ] Add basic Design Pattern info
+- [ ] Add complete list of patterns on side
 
 ## Types of Design Patterns
 
