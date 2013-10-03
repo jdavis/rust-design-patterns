@@ -4,7 +4,8 @@ TODO
 ## Basics
 
 - [ ] Fix up adapter.rs pattern
-- [ ] Create script that autogenerates documentation from code
+- [x] Create script that autogenerates documentation from code
+- [ ] Add code automatically when building (no duplication)
 - [ ] Add basic Design Pattern info
 
 ## Types of Design Patterns
