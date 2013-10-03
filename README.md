@@ -1,7 +1,8 @@
-# In the process of being converted from Python to Rust
-
 Design Patterns in Rust
 =========================
+
+> **Note:** This used to be a repository for design patterns in Python, it is in
+> the process of being converted over into Rust.
 
 Implementation of various design patterns in a new and exciting language called
 [Rust][rust].
