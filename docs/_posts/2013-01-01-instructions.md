@@ -36,4 +36,31 @@ Out of the six steps, this might be the most difficult one to master. It
 requires the ability to examine decisions and being able to see the trade-offs
 when designing software.
 
+## Find a Design Pattern
+
+If the problem has been accurately understood, the next thing to do is to find a
+Design Pattern that will either solve the problem or lessen the impact of it.
+
+This requires knowing some design patterns or at least knowing the categories
+that they fall in. When you know that the problem you are solving deals with
+object instances and instantiating them effectively, it would help to look at
+Creational design patterns.
+
+## Understand the Design Pattern
+
+Once you've selected the design pattern that will help you. It is well worth
+your time to understand it fully.
+
+Each design pattern on this site has eight parts:
+
+1. A definition
+2. List of alternative names (if any)
+3. A diagram showing a [UML][uml] representation of the pattern
+4. A common problem the pattern solves
+5. A wrong solution
+6. A correct solution using the pattern
+7. Consequences
+8. Example code
+
 [what]: /rust-design-patterns/what/
+[uml]: http://en.wikipedia.org/wiki/Unified_Modeling_Language
