@@ -11,7 +11,7 @@ description: Explanation of how to appropriately apply a Design Pattern.
 First it is very important to understand [what a design pattern is][what].
 
 After understanding what it is and why you would want to use a design pattern,
-the steps can be summarized as below:
+the steps of using a design pattern can be summarized as below:
 
 1. Identity a Problem
 2. Find a Design Pattern
@@ -63,6 +63,9 @@ that they fall in. When you know that the problem you are solving deals with
 object instances and instantiating them effectively, it would help to look at
 Creational design patterns.
 
+For the complete list of design patterns that this website has, view the
+[homepage][home].
+
 ## Understand the Design Pattern
 
 Once you've selected the design pattern that will help you. It is well worth
@@ -81,6 +84,9 @@ Each design pattern on this site has eight parts:
 
 After understanding it, if it doesn't actually solve your problem, you may have
 to go to the previous step of finding one that might solve it.
+
+Have a look at the [Adapter Design Pattern][adapter] to see what this looks
+like.
 
 ## Look at the Example
 
@@ -125,6 +131,8 @@ By using a design pattern, the quality of your code and software can be greatly
 increased. It's important to realize the benefit that they can provide and what
 problems they may solve.
 
+[home]: /
 [what]: /rust-design-patterns/what/
 [observer]: /rust-design-patterns/observer/
+[adapter]: /rust-design-patterns/adapter/
 [uml]: http://en.wikipedia.org/wiki/Unified_Modeling_Language
