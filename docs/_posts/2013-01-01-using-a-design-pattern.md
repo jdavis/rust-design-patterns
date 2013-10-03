@@ -116,7 +116,7 @@ The implementation of a design pattern will vary greatly depending on the
 language, package layout, and other factors of the software environment.
 
 However, the core idea does not change. An example of this would be implementing
-the [Observer pattern][observer] in Rust as compared to Java.
+the Observer pattern in Rust as compared to Java.
 
 In Java, you could use polymorphism or an interface when creating your observer
 pattern.
