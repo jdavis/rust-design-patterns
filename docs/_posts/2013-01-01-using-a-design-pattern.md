@@ -59,7 +59,7 @@ Each design pattern on this site has eight parts:
 4. A common problem the pattern solves
 5. A wrong solution
 6. A correct solution using the pattern
-7. Consequences
+7. Consequences of using the pattern
 8. Example code
 
 After understanding it, if it doesn't actually solve your problem, you may have
@@ -67,9 +67,25 @@ to go to the previous step of finding one that might solve it.
 
 ## Look at the Example
 
-The example will provide a self contained use case of the pattern in action.
+The example will provide a self contained use case of the pattern in action. It
+will show how to structure the classes/interfaces and it will show the
+functions/methods that will need to interact together.
+
+The example can be also used as a template for what you wish to do. The next
+step will look what might happen if your problem requires a lot more effort to
+solve. You may wish to just use it as a reference and make further
+modifications based on your specific use case.
+
 
 ## Fit the Pattern
+
+The problem that you have might not fit the given problem exactly. For whatever
+the reason may be, it may be required to make certain changes to either your
+structure or to the design pattern.
+
+It may be the case that you are already using another design pattern as well.
+You may have to make them work together and do other things to improve the
+design of your software.
 
 ## Implement the Pattern
 
