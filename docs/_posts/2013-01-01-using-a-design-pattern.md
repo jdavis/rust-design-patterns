@@ -13,24 +13,40 @@ First it is very important to understand [what a design pattern is][what].
 After understanding what it is and why you would want to use a design pattern,
 the steps can be summarized as below:
 
-1. Identity the Problem
+1. Identity a Problem
 2. Find a Design Pattern
 3. Understand the Design Pattern
 4. Look at the Example
 5. Fit the Pattern
 6. Implement the Pattern
 
-## Identity the Problem
+## Identity a Problem
 
-When you are designing software, it is important to look at the trade-offs and
-shortcomings whenever you make a decision about the structure of your code.
+It is very easy to design software in an ad-hoc fashion by adding functions and
+classes whenever the need arises. The problem with this is that it doesn't work
+well for large projects or when multiple develop on the same project.
 
-A few examples of this could be the following:
+The way to remedy this is to think about how you want to do something before you
+actually do it. By doing this, you can look at the trade-offs and shortcomings
+whenever you make a decision about the structure of your code.
+
+A few examples of the problems that arise when not thoroughly thinking through a
+design are below:
+
+1. I need code to do X. I'll add it to this object. Oh, this code also needs to
+   be in this object? I'll just copy and paste it.
+2. I need to reuse code across different objects. I'll just make a dummy object
+   that only contains that method.
+
+By designing instead of coding blindly, the following problems might arise:
 
 1. If I were to use inheritance here to solve X problem, what side effects would
    it have when this code needs to be extended for Y?
-2. If I split up the classes in this way, it will solve X. It will make it
-   easier to understand but then I introduce the problem Y.
+2. If I split up the classes in this way, it will solve X. Will that make it
+   easier to understand if problem Y arises?
+
+The second set of questions accurately looks at the side-effects of every action
+in a code base.
 
 Out of the six steps, this might be the most difficult one to master. It
 requires the ability to examine decisions and being able to see the trade-offs
