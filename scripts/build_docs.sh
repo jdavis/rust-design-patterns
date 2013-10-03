@@ -14,8 +14,6 @@ SITE_DIR="_site"
 function usage() {
     echo usage: build_docs.sh [commands...]
     echo
-    echo default command: build
-    echo
     echo Commands:
     echo "\tbuild\t\tBuilds Jekyll documentation"
     echo "\tdeploy\t\tCommits and pushes changes"
@@ -84,7 +82,7 @@ if [[ $PWD != $GIT_DIR ]]; then
 fi
 
 if [[ $# -eq 0 ]]; then
-    build
+    usage
 else
     # Run functions for the arguments given
     for cmd in "$@"
