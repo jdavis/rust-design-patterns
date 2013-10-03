@@ -1,7 +1,8 @@
-safe: true
+safe: false
 pygments: true
 permalink: /:title
 markdown: rdiscount
+plugins: docs/_plugins/
 
 title: Rust Design Patterns - Josh Davis
 name: Rust Design Patterns
