@@ -62,5 +62,16 @@ Each design pattern on this site has eight parts:
 7. Consequences
 8. Example code
 
+After understanding it, if it doesn't actually solve your problem, you may have
+to go to the previous step of finding one that might solve it.
+
+## Look at the Example
+
+The example will provide a self contained use case of the pattern in action.
+
+## Fit the Pattern
+
+## Implement the Pattern
+
 [what]: /rust-design-patterns/what/
 [uml]: http://en.wikipedia.org/wiki/Unified_Modeling_Language

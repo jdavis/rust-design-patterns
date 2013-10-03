@@ -97,7 +97,7 @@ will solve the problem once and never be modified, that is rarely the case.
 
 There are various design patterns (such as the [Strategy][strategy])
 
-## Simplicity
+### Simplicity
 
 There is no denying that a simple approach can sometimes be the best for the
 given project. By using a design pattern, you risk adding more classes and
