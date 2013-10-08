@@ -99,7 +99,6 @@ step will look what might happen if your problem requires a lot more effort to
 solve. You may wish to just use it as a reference and make further
 modifications based on your specific use case.
 
-
 ## Fit the Pattern
 
 The problem that you have might not fit the given problem exactly. For whatever
