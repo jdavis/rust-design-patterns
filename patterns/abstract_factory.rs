@@ -30,19 +30,19 @@ trait Factory<P: Phone, T: Tablet> {
  * Define our Apple products. Normally these structs would contain a lot more
  * data.
  */
-struct iPhone;
+struct IPhone;
 
-impl Phone for iPhone {
+impl Phone for IPhone {
     fn call(&self) {
-        println("Look! I'm calling on an iPhone!");
+        println!("Look! I'm calling on an IPhone!");
     }
 }
 
-struct iPad;
+struct IPad;
 
-impl Tablet for iPad {
+impl Tablet for IPad {
     fn play_games(&self) {
-        println("Just playing some games on my iPad.");
+        println!("Just playing some games on my IPad.");
     }
 }
 
@@ -51,13 +51,13 @@ impl Tablet for iPad {
  */
 struct AppleFactory;
 
-impl Factory<iPhone, iPad> for AppleFactory {
-    fn new_phone(&self) -> iPhone {
-        return iPhone;
+impl Factory<IPhone, IPad> for AppleFactory {
+    fn new_phone(&self) -> IPhone {
+        return IPhone;
     }
 
-    fn new_tablet(&self) -> iPad {
-        return iPad;
+    fn new_tablet(&self) -> IPad {
+        return IPad;
     }
 }
 
@@ -70,7 +70,7 @@ struct Nexus4;
 
 impl Phone for Nexus4 {
     fn call(&self) {
-        println("Look! I'm calling on a Nexus 4!");
+        println!("Look! I'm calling on a Nexus 4!");
     }
 }
 
@@ -78,7 +78,7 @@ struct Nexus10;
 
 impl Tablet for Nexus10 {
     fn play_games(&self) {
-        println("Just playing some games on my Nexus 10.");
+        println!("Just playing some games on my Nexus 10.");
     }
 }
 

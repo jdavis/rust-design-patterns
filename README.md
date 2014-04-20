@@ -24,7 +24,7 @@ To run a given pattern, just run it like this:
 $ cd design-patterns/
 
 # Run the Adapter pattern
-$ rust run patterns/adapter.rs
+$ make adapter
 
 ```
 
