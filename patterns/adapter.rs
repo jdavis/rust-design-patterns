@@ -23,19 +23,19 @@ struct NASAShip;
  */
 impl RocketShip for NASAShip {
     fn turn_on(&self) {
-        println("NASA Ship is turning on.")
+        println!("NASA Ship is turning on.")
     }
 
     fn turn_off(&self) {
-        println("NASA Ship is turning off.")
+        println!("NASA Ship is turning off.")
     }
 
     fn blast_off(&self) {
-        println("NASA Ship is blasting off.")
+        println!("NASA Ship is blasting off.")
     }
 
     fn fly(&self) {
-        println("NASA Ship is flying away.")
+        println!("NASA Ship is flying away.")
     }
 }
 
@@ -61,23 +61,23 @@ struct SpaceXDragon;
  */
 impl SpaceXShip for SpaceXDragon {
     fn ignition(&self) {
-        println("Turning Dragon's ignition.")
+        println!("Turning Dragon's ignition.")
     }
 
     fn on(&self) {
-        println("Turning on the Dragon.")
+        println!("Turning on the Dragon.")
     }
 
     fn off(&self) {
-        println("Turning off the Dragon.")
+        println!("Turning off the Dragon.")
     }
 
     fn launch(&self) {
-        println("Launching the Dragon")
+        println!("Launching the Dragon")
     }
 
     fn fly(&self) {
-        println("The Dragon is flying away.")
+        println!("The Dragon is flying away.")
     }
 }
 
@@ -123,7 +123,7 @@ fn pilot<S: RocketShip>(ship: &S) {
     ship.blast_off();
     ship.fly();
     ship.turn_off();
-    print("\n");
+    print!("\n");
 }
 
 fn main() {
@@ -131,7 +131,7 @@ fn main() {
     let saturn5 = NASAShip;
 
     // Let's fly our NASAShip
-    println("Piloting the Saturn 5.");
+    println!("Piloting the Saturn 5.");
     pilot(&saturn5);
 
     // Create a Dragon
@@ -146,6 +146,6 @@ fn main() {
     };
 
     // Now we can pilot the Dragon!
-    println("Piloting the Dragon Adapter.");
+    println!("Piloting the Dragon Adapter.");
     pilot(&dragon_adapter);
 }
